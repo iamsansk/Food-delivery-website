@@ -1,0 +1,30 @@
+@font-face {
+  font-family: Poppins-regular;
+  src: url("../src/Fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins-medium;
+  src: url("../src/Fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: Poppins-semibold;
+  src: url("../src/Fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: Pacifico;
+  src: url("../src/Fonts/Pacifico-Regular.ttf");
+}
+
+:root{
+  --rich-red : #FF5733;
+  --fresh-green : #28B463;
+  --warm-yellow :#FFC300;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins-regular;
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,117 @@
+.checkout__container {
+    min-height: 60vh;
+    padding: 25px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.address__field,
+.payment__detail {
+    flex: 1;
+    padding: 20px 50px;
+}
+
+.address__field h2,
+.payment__detail h2 {
+    margin: 10px 0;
+    color: var(--rich-red);
+}
+
+.address__field form .input_field {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.input_field input {
+    width: 50%;
+    padding: 10px;
+}
+
+.full__field input {
+    width: 100%;
+}
+
+.full__field input[type="submit"] {
+    font-size: 1.15rem;
+    color: var(--warm-yellow);
+    background-color: var(--fresh-green);
+    border: none;
+    cursor: pointer;
+    padding: 8px 0;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+.full__field input[type="submit"]:hover {
+    background-color: #1d9d52;
+}
+
+.amount__field {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.checkout__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkout__header p {
+    border-bottom: 1.5px solid var(--fresh-green);
+    color: var(--fresh-green);
+}
+
+.policy {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.policy a {
+    text-decoration: none;
+    color: var(--rich-red);
+    transition: 0.5s;
+}
+
+.policy a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:749px) {
+    .checkout__container {
+        flex-direction: column;
+        padding: 8px 5px;
+    }
+
+    .address__field,
+    .payment__detail {
+        padding: 10px 20px;
+    }
+
+    .address__field h2,
+    .payment__detail h2 {
+        font-size: 1.15rem;
+    }
+
+    .input_field input {
+        padding: 6px 8px;
+    }
+
+    .checkout__header p {
+        font-size: 0.65rem;
+        padding: 0;
+    }
+
+    .amount__field {
+        font-size: 0.85rem;
+    }
+
+    .policy a {
+        font-size: 0.65rem;
+    }
+}

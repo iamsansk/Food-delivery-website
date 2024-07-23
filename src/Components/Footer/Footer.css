@@ -1,0 +1,97 @@
+.web__footer{
+    background-color: #212121;
+    color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.social__media{
+    display: flex;
+    gap: 15px;
+    position: relative;
+}
+.social__media::after,
+.social__media::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 120%;
+    background-color: #fff;
+}
+.social__media::after{
+    left: -210px;
+}
+.social__media::before{
+    right: -210px;
+}
+.social{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.social:hover{
+    transform: scale(1.15);
+}
+.social:nth-child(3),
+.social:nth-child(4){
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+}
+.logo h2{
+    font-family: Pacifico;
+    margin: 10px;
+}
+.banner__links{
+    text-align: center;
+    font-size: 0.75rem;
+}
+.banner__links a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.banner__links a:hover,
+.copy__rights p a:hover{
+    text-decoration: underline;
+}
+.copy__rights{
+    padding: 10px 0 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.copy__rights p a{
+    color: var(--rich-red);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+@media screen and (max-width:749px){
+    .web__footer{
+        padding: 20px 15px 0;
+        padding-bottom: 70px;
+    }
+    .social__media::after,
+    .social__media::before{
+        display: none;
+    }
+    .social{
+        height: 20px;
+        width: 20px;
+    }
+    .logo h2{
+        font-size: 1.2rem;
+    }
+    .banner__links{
+        font-size: 0.65rem;
+    }
+    .banner__links p{
+        margin-top: 2px;
+    }
+    .copy__rights{
+        font-size: 0.75rem;
+    }
+}

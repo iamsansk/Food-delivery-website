@@ -1,0 +1,147 @@
+.thankyou__container{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+    background-color: antiquewhite;
+}
+.next__order__offer{
+    min-height: 160px;
+    width: 465px;
+    background-color: var(--rich-red);
+    color: var(--warm-yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.border__line{
+    border: 2px solid var(--warm-yellow);
+    margin: 0 8px;
+    padding: 15px;
+    text-align: center;
+}
+.border__line .coupan{
+    margin-top: 10px;
+}
+.border__line .coupan input[type="text"],
+.border__line .coupan button{
+    width: 75%;
+    padding: 5px;  
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.border__line .coupan button{
+    width: 25%;
+    cursor: pointer;
+    background-color: var(--warm-yellow);
+    color: var(--rich-red);
+}
+.thankyou__section h1{
+    font-size: 2.5rem;
+    color: var(--fresh-green);
+    margin: 20px 0;
+    animation: animate 2.5s infinite ease;
+}
+@keyframes animate {
+    0%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+.order__placed__msg{
+    width: 465px;
+    background-color: rgba(81, 138, 184, 0.5);
+    text-align: center;
+    padding: 10px;
+}
+.order__placed__msg p{
+    font-weight: 600;
+    line-height: 30px;
+}
+.order__placed__msg button{
+    background-color: var(--fresh-green);
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.order__placed__msg button:hover{
+    border-radius: 50px;
+}
+.order__id h2{
+    margin: 20px 0;
+    color: var(--rich-red);
+    padding-bottom: 0;
+    border-bottom: 2px solid var(--rich-red);
+}
+.cartItems{
+    display: flex;
+    flex-direction: column;
+}
+.each__item{
+    width: 465px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.image_price{
+    display: flex;
+    gap: 20px;
+}
+.image_price img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+.total__amount{
+    width: 465px;
+}
+
+@media screen and (max-width:560px) {
+    .next__order__offer,
+    .order__placed__msg,
+    .cartItems,
+    .total__amount,
+    .each__item{
+        width: 90%;
+    }
+    .next__order__offer{
+        padding: 10px 5px;
+    }
+    .border__line{
+        padding: 15px;
+    }
+    .border__line .coupan input[type="text"]{
+        width: 70%;
+    }
+    .border__line .coupan button{
+        width: 30%;
+    }
+    .border__line .coupan input[type="text"],
+    .border__line .coupan button,
+    .next__order__offer h3{
+        font-size: 0.95rem;
+    }
+    .thankyou__section h1{
+        font-size: 2rem;
+    }
+    .order__placed__msg,
+    .next__order__offer p{
+        font-size: 0.9rem;
+    }
+    .order__placed__msg button{
+        padding: 6px 10px;
+    }
+
+}

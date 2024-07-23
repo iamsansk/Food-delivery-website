@@ -1,0 +1,135 @@
+.cart__container{
+    width: 100%;
+    min-height: 60vh;
+    padding: 20px;
+}
+.cart__container h1{
+    color: var(--rich-red);
+}
+.cart__header{
+    margin-top: 10px;
+    font-weight: 600;
+    color: var(--fresh-green);
+}
+.cart__items{
+    display: grid;
+    grid-template-columns: 2fr 2fr 0.25fr;
+    align-items: center;
+    padding: 10px 0;
+}
+.cart__container hr{
+    border: 0.5px solid rgba(67, 71, 85, 0.2);
+}
+.image__price{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.image__price img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+.quantity_container{
+    background-color: #fff;  
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;    
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.quantity_container .qty__icon{
+    height: 30px;
+    width: 30px;
+    border: none;  
+    cursor: pointer;
+}
+.product__total h4{
+    float: right;
+}
+.total__price{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+.total__price .sub__total{
+    font-size: 1.35rem;
+    margin: 7px 0;
+}
+.total__price .checkout__btn,
+.empty__cart .continue__shopping__btn{
+    background-color: var(--fresh-green);
+    color: var(--warm-yellow);
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 25px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.total__price .checkout__btn:hover,
+.empty__cart .continue__shopping__btn:hover{
+    background-color:#1d9d52;
+}
+.empty__cart{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+.empty__cart .cart__empty__msg{
+    color: var(--rich-red);
+    font-weight: 600;
+}
+@media screen and (max-width:950px){
+    .quantity_container{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:749px) {
+    .cart__container{
+        min-height: 50vh;
+        padding-bottom: 0;
+    }
+    .cart__container h1,
+    .total__price .sub__total{
+        font-size: 1.25rem;
+    }
+    .image__price{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .image__price .price__name{
+        width: 50%;
+    }
+    .image__price .price__name :where(h4,p),
+    .cart__header p,
+    .total__price p{
+        font-size: 0.75rem;
+        line-height: 15px;
+    }
+    .quantity_container{
+        width: 90px;
+    }
+    .quantity_container .qty__icon{
+        height: 25px;
+        width: 25px;
+    }
+    .product__total h3{
+        font-size: 1rem;
+    }
+    .total__price{
+        align-items: center;
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+    
+}
+
