@@ -1,6 +1,6 @@
 import './Collection.css'
 import { menu_list } from '../../../assets/assets'
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { StoreContext } from '../../Context/StoreContext';
 
 export const Collection = () => {
