@@ -14,7 +14,7 @@ export const Product = ({id,name,price,offerPrice,image,description}) => {
                 <p className='rating'>⭐⭐⭐⭐</p>
                 <p className='description'>{description}</p>
                 <div className="price_qty">
-                    <p className='price'><span className={offerPrice?"strike__through" : ""}>₹{price}</span><span className='price__final'>{offerPrice ? "₹"+offerPrice: ""}</span></p>
+                    <p className='price'><span className={offerPrice?"strike__through" : ""}>₹{offerPrice ? "₹"+offerPrice: price}</span><span className='price__final'>{offerPrice ? "₹"+price: ""}</span></p>
                       <div>
                         {
                           !cartItems[id]?<img src={assets.addToCart} onClick={()=>CartAddItems(id)} alt="add_btn" className='addToCart__btn'/>:
