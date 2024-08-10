@@ -32,7 +32,7 @@ npm install
 ### 3. Run the Application
 
 ```bash
-npm start
+npm run dev
 ```
 
 ## 🛒 Usage
