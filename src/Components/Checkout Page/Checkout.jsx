@@ -75,7 +75,9 @@ export const Checkout = () => {
   }
 
   const payNow = () => {
-    const hasEmptyString = Object.values(address).some(value => value === "");
+    const hasEmptyString = Object.values(address).some(
+    value => !value || value.trim() === ""
+    );
     if (hasEmptyString) {
       notifyError("Enter All the Fields!");
       return;
