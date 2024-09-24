@@ -22,7 +22,7 @@ export const Footer = () => {
             </p>
         </div>
         <div className="copy__rights">
-            <p>Copy right © 2024 Crafted by <a href="https://santhoshkumar-portfilio.netlify.app/" target='_blank'>SANTHOSHKUMAR</a></p>
+            <p>Copy right © 2024 Crafted by <a href="https://sanfolio.netlify.app/" target='_blank'>SANTHOSHKUMAR</a></p>
         </div>
     </div>
   )
