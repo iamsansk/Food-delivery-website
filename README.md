@@ -19,7 +19,7 @@ This is a React-based Food Delivery website where users can browse a variety of 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/food-delivery-website.git
+git clone https://github.com/iamsansk/food-delivery-website.git
 cd food-delivery-website
 ```
 
